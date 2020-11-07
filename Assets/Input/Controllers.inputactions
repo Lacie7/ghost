@@ -1,0 +1,33 @@
+{
+    "name": "Controllers",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "221c6108-874d-42bc-a4e6-a3ebd328ebfa",
+            "actions": [
+                {
+                    "name": "Move",
+                    "type": "Value",
+                    "id": "9eed18df-7eb7-4fdf-b9f2-2dd9ac2b016c",
+                    "expectedControlType": "Touch",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "64e379f6-7081-43c8-8db7-0206f9deaaed",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
