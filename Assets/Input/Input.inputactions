@@ -1,15 +1,15 @@
 {
-    "name": "Controllers",
+    "name": "Input",
     "maps": [
         {
             "name": "Player",
-            "id": "221c6108-874d-42bc-a4e6-a3ebd328ebfa",
+            "id": "ff0b37f8-78c1-405a-a544-ad85cf5a9582",
             "actions": [
                 {
                     "name": "Move",
-                    "type": "Value",
-                    "id": "9eed18df-7eb7-4fdf-b9f2-2dd9ac2b016c",
-                    "expectedControlType": "Touch",
+                    "type": "Button",
+                    "id": "531fae93-2876-40ea-8c27-5bd86359362e",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
                 }
@@ -17,8 +17,8 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "64e379f6-7081-43c8-8db7-0206f9deaaed",
-                    "path": "",
+                    "id": "92e01509-e26c-4990-be90-6611852bb60d",
+                    "path": "<Mouse>/press",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
