@@ -4,29 +4,24 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PLayerMovement : MonoBehaviour
+
+
 {
 
-    public float moveSpeed = 5f;
+    private void Start()
+    {
 
-    public Rigidbody2D rb;
 
-    Vector2 movement;
+      transform.position += Vector3.up;
+    }
+
 
 
     // Update is called once per frame
     void Update()
     {
-
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
-
         
     }
 
-    private void FixedUpdate()
-    {
-
-        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
-
-    }
+   
 }

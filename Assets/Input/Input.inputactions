@@ -6,9 +6,17 @@
             "id": "ff0b37f8-78c1-405a-a544-ad85cf5a9582",
             "actions": [
                 {
-                    "name": "Move",
-                    "type": "Button",
+                    "name": "Movement",
+                    "type": "Value",
                     "id": "531fae93-2876-40ea-8c27-5bd86359362e",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Click",
+                    "type": "Button",
+                    "id": "56446629-6903-463c-8233-fdcae9a1d48e",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -17,12 +25,23 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "92e01509-e26c-4990-be90-6611852bb60d",
-                    "path": "<Mouse>/press",
+                    "id": "6e50b021-d9e9-4bdf-bf87-17aca5cc3c39",
+                    "path": "<Mouse>/position",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Move",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f9796812-5f44-489b-b4da-0462d2ba26be",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Click",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
