@@ -6,11 +6,14 @@ using UnityEngine.InputSystem;
 public class Player : MonoBehaviour
 
 {
-    [SerializeField] private float speed;
-    [SerializeField] private float maxSpeed;
+    [SerializeField] private float point;
+    // [SerializeField] private float maxSpeed;
 
-    private Rigidbody2D myRB;
-    private Vector2 mousePosition;
+    private Collider myCO;
+    private Vector3 mousePosition;
+   
+    
+
 
     private void OnEnable()
     {
@@ -18,37 +21,32 @@ public class Player : MonoBehaviour
         input.Enable();
         input.Player.Movement.performed += MovementOnperformed;
         input.Player.Movement.canceled += MovementOncanceled;
-    }
-
-    private void MovementOnperformed(InputAction.CallbackContext obj)
-
-    {
-       mousePosition = obj.ReadValue<Vector2>();
-      
+        
 
     }
-    private void MovementOncanceled(InputAction.CallbackContext obj)
+
+    private void MovementOnperformed(InputAction.CallbackContext mouse)
 
     {
-        mousePosition = Vector2.zero;
+      //  Vector3 mousePosition = mousePositionReference.ReadValue<Vector2>();
+
+
+    }
+    private void MovementOncanceled(InputAction.CallbackContext mouse)
+
+    {
+       // Vector3 mousePosition = Input.mousePosition;
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        myRB = GetComponent<Rigidbody2D>();
+        // myCO = GetComponent<Collider>();
     }
 
     // Update is called once per frame
-    void FixedUpdate()
-    {
 
-        if (myRB.velocity.sqrMagnitude < maxSpeed)
-
-        {
-            myRB.AddForce(mousePosition * speed);
-        }
-       
-
+    void Update()
+    { 
     }
 }
