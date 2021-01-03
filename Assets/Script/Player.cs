@@ -28,20 +28,20 @@ public class Player : MonoBehaviour
     private void MovementOnperformed(InputAction.CallbackContext mouse)
 
     {
-      //  Vector3 mousePosition = mousePositionReference.ReadValue<Vector2>();
+     // Vector3 mousePosition = mousePositionReference.ReadValue<Vector2>();
 
 
     }
     private void MovementOncanceled(InputAction.CallbackContext mouse)
 
     {
-       // Vector3 mousePosition = Input.mousePosition;
+     //  Vector3 mousePosition = Input.mousePosition;
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        // myCO = GetComponent<Collider>();
+        
     }
 
     // Update is called once per frame
